@@ -1,0 +1,22 @@
+[project]
+name = "fastapi-i18n-plugin"
+version = "0.1.0"
+description = "A reusable i18n plugin for FastAPI applications."
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+dependencies = [
+    "fastapi>=0.100.0",
+    "starlette>=0.27.0",
+    "python-gettext",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["fastapi_i18n_plugin*"]
+namespaces = false
